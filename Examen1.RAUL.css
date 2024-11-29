@@ -5,10 +5,10 @@
 
 @font-face {
   font-family: main;
-  src: url(Sarcolenta.ttf);
+  src: url(./Sarcolenta.ttf);
 }
 
-header {
+html {
   font-size: 62.5%;
 }
 
@@ -19,144 +19,166 @@ body {
 
 header {
   width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.navegacion {
-  width: 100%;
+header .logo {
+  width: 10rem;
+  margin: 5rem 10rem;
+}
+
+header .navegacion {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: black;
+  width: 100%;
 }
 
 header .navegacion > a {
+  width: 20%;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  padding: 2rem;
-  margin: auto;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 header .navegacion > a:hover {
-  background-color: #bcbf3c;
+  background-color: #c6c64b;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  width: 100%;
-}
-
-main > h1 {
-  margin: 2rem auto;
-}
-
-main > img {
-  margin: auto;
-  border-radius: 3rem;
-  margin: 5rem auto;
+.principal img {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  width: 80%;
+  border-radius: 5rem;
   box-shadow: -0.5rem 0 1rem black;
 }
 
-main > section {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  margin: auto;
-  gap: 1rem;
-}
-
-.columna1 {
-  display: flex;
-}
-
-.columna2 {
-  display: flex;
-}
-
-.columna3 {
-  display: flex;
-}
-
-main > section .primero {
-  background-color: #bcbf3c;
-  display: grid;
+main {
   width: 100%;
-}
-
-main > section .primero > p {
-  margin: auto;
-  color: white;
-  font-size: 2rem;
-}
-
-main > section .tercero {
-  font-size: 2rem;
-  font-style: italic;
-}
-
-form {
-  width: 80%;
-  background-color: rgb(148, 148, 148);
-  height: 60rem;
-  margin: 5rem auto;
-  color: rgb(0, 0, 0);
-}
-
-form .contenedor-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 2rem auto 1rem 2rem;
+  align-items: center;
 }
 
-form > h1 {
+main > h1 {
+  font-size: 5rem;
+  text-shadow: 0.4rem 0.2rem 0.2rem rgb(164, 164, 164);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+main .columnas {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  justify-content: center;
+  gap: 3rem;
+}
+
+main .box {
+  display: flex;
+  align-items: center;
+}
+
+main .box .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #c6c64b;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+main .box .info p {
+  font-size: 3rem;
+  padding: 2rem;
+  color: white;
+}
+
+main .box > img {
+  width: 100%;
+  box-shadow: 0 0 1em black;
+  border-radius: 4rem;
+}
+
+main .box .text {
+  font-size: 2rem;
+}
+
+main .box .text-2 {
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+  margin-right: 5rem;
+}
+
+main .box .text-3 {
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+.formulario {
+  background-color: grey;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+}
+
+.formulario > h1 {
   font-size: 4rem;
   padding: 3rem;
 }
 
-form .contenedor-form > p {
-  font-size: 2rem;
+form {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-form .contenedor-form > input {
-  width: 80%;
-  height: 5rem;
-  margin: auto;
+.alineacion {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-form .contenedor-form > #button {
-  width: 10%;
-  height: 5rem;
-  background-color: #159e00;
-  color: white;
-  border: none;
-  margin-right: 7.5rem;
+form .nombre input {
+  width: 80%;
+  height: 4rem;
 }
 
-form .contenedor-form > label {
-  font-size: 2rem;
-  display: flex;
+form .apellidos input {
+  width: 80%;
+  height: 4rem;
+}
+form .nombre input {
   width: 80%;
 }
-
-form .contenedor-form > p {
-  font-size: 2rem;
+form .pais select {
   width: 80%;
+  height: 4rem;
 }
 
-form .contenedor-form #Pais {
-  width: 30%;
-  margin-left: 3.5rem;
+form .asunto textarea {
+  width: 80%;
+  height: 9rem;
 }
 
-form .contenedor-form > textarea {
-  width: 80%;
-  height: 20rem;
+.formulario > button {
   margin: auto;
+  width: 10rem;
+  height: 5rem;
+  background-color: rgb(149, 206, 65);
+  border: none;
+  color: white;
+  margin-bottom: 2.5rem;
 }
 
 .cajas {
@@ -167,15 +189,20 @@ form .contenedor-form > textarea {
   margin: 2rem 0 auto;
 }
 
-.cajas .box {
-  width: 20%;
+.cajas .caja {
+  width: 80%;
   margin: auto;
   padding: 2rem;
-  text-align: center;
   font-size: 2rem;
 }
 
-.cajas .box::first-line {
+.cajas .caja p {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.cajas .caja p::first-line {
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -194,31 +221,72 @@ footer > p {
 }
 
 @media (max-width: 40rem) {
-  nav {
+  header .navegacion {
     display: flex;
     flex-direction: column;
+    background-color: grey;
+    width: 100%;
+  }
+  header .navegacion > a {
+    width: 100%;
+  }
+  .principal img {
+    width: 100%;
+  }
+  main .columnas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3rem;
   }
 
-  main > img {
-    width: 80%;
-  }
-
-  main > h1 {
-    margin: 2rem auto;
-  }
-
-  main > img {
-    margin: auto;
-    border-radius: 3rem;
-    margin: 5rem auto;
-    box-shadow: -0.5rem 0 1rem black;
-  }
-
-  main > section {
-    width: 80%;
+  main .box .info {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    background-color: #c6c64b;
+    align-items: center;
+  }
+
+  main .box .info p {
+    font-size: 1.5rem;
+  }
+
+  main .box > img {
+    width: 40%;
+    box-shadow: 0 0 1em black;
+    border-radius: 4rem;
+    grid-row: 3;
+  }
+
+  main .box .text {
+    font-size: 1.5rem;
+  }
+
+  main .box .text-2 {
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  main .box .text-3 {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .cajas .caja {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .cajas .caja p::first-line {
+    font-size: 1.5rem;
+  }
+  .cajas .caja p {
+    text-align: center;
+    width: 50%;
     margin: auto;
-    gap: 1rem;
   }
 }

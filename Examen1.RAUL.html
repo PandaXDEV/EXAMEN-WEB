@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="logo.jpg" alt="" />
+      <div class="logo"><img src="logo.jpg" alt="" /></div>
       <nav class="navegacion">
         <a href="">RECETAS</a>
         <a href="">PRODUCTOS</a>
@@ -16,95 +16,107 @@
         <a href="">VIDEOS</a>
       </nav>
     </header>
-    <main>
+    <section class="principal">
       <img src="platillo.jpg" alt="" />
+    </section>
+    <main>
       <h1>La mejor receta para hacer pizza en tu hogar</h1>
-      <section>
-        <div class="columna1">
-          <div class="primero">
-            <p>30 Minutos</p>
-            <p>4 Personas</p>
-            <p>25 euros</p>
+      <div class="columnas">
+        <div class="box">
+          <div class="info">
+            <p>30 Minutos<br /></p>
+            <p>4 personas<br /></p>
+            <p>25 euros<br /></p>
           </div>
-          <div class="segundo">
-            <p>
-              En Receta Fácil, combinamos pasión, tradición y los ingredientes
-              más frescos para ofrecerte una experiencia inolvidable. Cada pizza
-              que sale de nuestro horno está hecha con amor y cuidado,
-              utilizando recetas auténticas que han sido perfeccionadas a lo
-              largo de los años. Nuestro compromiso es llevar a tu mesa los
-              sabores de Italia, fusionados con un toque moderno que hará que
-              quieras volver una y otra vez. Desde nuestras clásicas Margheritas
-              hasta nuestras creaciones gourmet, cada bocado está pensado para
-              deleitar tus sentidos.
-            </p>
+          <div class="text">
+            En Receta Fácil, combinamos pasión, tradición y los ingredientes más
+            frescos para ofrecerte una experiencia inolvidable. Cada pizza que
+            sale de nuestro horno está hecha con amor y cuidado, utilizando
+            recetas auténticas que han sido perfeccionadas a lo largo de los
+            años. Nuestro compromiso es llevar a tu mesa los sabores de Italia,
+            fusionados con un toque moderno que hará que quieras volver una y
+            otra vez. Desde nuestras clásicas Margheritas hasta nuestras
+            creaciones gourmet, cada bocado está pensado para deleitar tus
+            sentidos.
           </div>
         </div>
-        <div class="columna2">
-          <div class="tercero">
-            <p>
-              Además de nuestras deliciosas pizzas, contamos con una amplia
-              selección de ensaladas frescas, pastas artesanales y postres
-              caseros que son el broche de oro perfecto para cualquier comida.
-              Acompaña tu experiencia con nuestra carta de vinos, cervezas
-              artesanales o bebidas refrescantes.
-            </p>
+        <div class="box derecha">
+          <div class="text-2">
+            Además de nuestras deliciosas pizzas, contamos con una amplia
+            selección de ensaladas frescas, pastas artesanales y postres caseros
+            que son el broche de oro perfecto para cualquier comida. Acompaña tu
+            experiencia con nuestra carta de vinos, cervezas artesanales o
+            bebidas refrescantes.
           </div>
           <img src="mini1.jpg" alt="" />
         </div>
-        <div class="columna3">
+        <div class="box izquierda">
           <img src="mini2.jpg" alt="" />
-          <div class="cuarto">
-            <p>
-              ¡Te esperamos! Ya sea que vengas a celebrar una ocasión especial,
-              a disfrutar de una cena relajada o a recoger tu pedido para
-              llevar, en Receta Fácil siempre encontrarás un lugar donde el
-              sabor y la calidad son la prioridad. ¡Ven a visitarnos y descubre
-              por qué somos la opción favorita de los amantes de la buena pizza!
-            </p>
+          <div class="text-3">
+            ¡Te esperamos! Ya sea que vengas a celebrar una ocasión especial, a
+            disfrutar de una cena relajada o a recoger tu pedido para llevar, en
+            Receta Fácil siempre encontrarás un lugar donde el sabor y la
+            calidad son la prioridad. ¡Ven a visitarnos y descubre por qué somos
+            la opción favorita de los amantes de la buena pizza!
             <ul>
               <li>Ingredientes frescos y de alta calidad</li>
               <li>Masa artesanal, fermentada lentamente para un sabor único</li>
-              <li>Ambiente acogedor y familiar</li>
-              <li>Servicio amable y profesional</li>
+              <li>
+                Ambiente acogedor y familiar Servicio amable y profesional
+              </li>
             </ul>
           </div>
         </div>
-      </section>
-    </main>
-
-    <form action="">
-      <h1>CONTACTO</h1>
-      <div class="contenedor-form">
-        <p>Nombre:</p>
-        <input type="text" />
-        <p>Apellidos:</p>
-        <input type="text" />
-        <label for="Pais">
-          <p>País:</p>
-          <select name="Pais" id="Pais">
-            <option value="spain">España</option>
-            <option value="canada">Canada</option>
-            <option value="mx">MX</option>
-          </select>
-        </label>
-        <p>Asunto:</p>
-        <textarea name="asunto" id="asunto"></textarea>
-        <input id="button" type="button" value="Enviar" />
       </div>
-    </form>
+    </main>
+    <section class="formulario">
+      <h1>CONTACTO</h1>
+      <form>
+        <div class="nombre alineacion">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" type="text" placeholder="Tu Nombre.." />
+        </div>
+        <div class="apellidos alineacion">
+          <label for="apellidos">Apellidos:</label>
+          <input id="apellidos" type="text" placeholder="Tus apellidos" />
+        </div>
+        <div class="pais alineacion">
+          <label for="pais">País:</label>
+          <select id="pais" name="pais">
+            <option value="espana">España</option>
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+          </select>
+        </div>
+        <div class="asunto alineacion">
+          <label for="asunto">Asunto:</label>
+          <textarea id="asunto" placeholder="Escribe algo.."></textarea>
+        </div>
+        <br />
+      </form>
+      <button type="submit">Enviar</button>
+    </section>
     <section class="cajas">
       <div class="box">
-        Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        <p>
+          Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        </p>
       </div>
       <div class="box">
-        Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        <p>
+          Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        </p>
       </div>
       <div class="box">
-        Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        <p>
+          Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        </p>
       </div>
       <div class="box">
-        Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        <p>
+          Recetas Comida mexicana Pizzas Postres Comida Asiatica Comida Rápida
+        </p>
       </div>
     </section>
     <footer><p>Receta fácil</p></footer>
