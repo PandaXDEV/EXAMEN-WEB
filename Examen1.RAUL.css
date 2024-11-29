@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: main;
+  src: url(Sarcolenta.ttf);
+}
+
+header {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: main;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.navegacion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+header .navegacion > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+header .navegacion > a:hover {
+  background-color: #bcbf3c;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  width: 100%;
+}
+
+main > h1 {
+  margin: 2rem auto;
+}
+
+main > img {
+  margin: auto;
+  border-radius: 3rem;
+  margin: 5rem auto;
+  box-shadow: -0.5rem 0 1rem black;
+}
+
+main > section {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+  gap: 1rem;
+}
+
+.columna1 {
+  display: flex;
+}
+
+.columna2 {
+  display: flex;
+}
+
+.columna3 {
+  display: flex;
+}
+
+main > section .primero {
+  background-color: #bcbf3c;
+  display: grid;
+  width: 100%;
+}
+
+main > section .primero > p {
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+}
+
+main > section .tercero {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+form {
+  width: 80%;
+  background-color: rgb(148, 148, 148);
+  height: 60rem;
+  margin: 5rem auto;
+  color: rgb(0, 0, 0);
+}
+
+form .contenedor-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto 1rem 2rem;
+}
+
+form > h1 {
+  font-size: 4rem;
+  padding: 3rem;
+}
+
+form .contenedor-form > p {
+  font-size: 2rem;
+}
+
+form .contenedor-form > input {
+  width: 80%;
+  height: 5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+form .contenedor-form > #button {
+  width: 10%;
+  height: 5rem;
+  background-color: #159e00;
+  color: white;
+  border: none;
+  margin-right: 7.5rem;
+}
+
+form .contenedor-form > label {
+  font-size: 2rem;
+  display: flex;
+  width: 80%;
+}
+
+form .contenedor-form > p {
+  font-size: 2rem;
+  width: 80%;
+}
+
+form .contenedor-form #Pais {
+  width: 30%;
+  margin-left: 3.5rem;
+}
+
+form .contenedor-form > textarea {
+  width: 80%;
+  height: 20rem;
+  margin: auto;
+}
+
+.cajas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  background-color: #bcbf3c;
+  margin: 2rem 0 auto;
+}
+
+.cajas .box {
+  width: 20%;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cajas .box::first-line {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: rgb(73, 73, 73);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > p {
+  margin: auto;
+  padding: 1rem;
+}
+
+@media (max-width: 40rem) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > img {
+    width: 80%;
+  }
+
+  main > h1 {
+    margin: 2rem auto;
+  }
+
+  main > img {
+    margin: auto;
+    border-radius: 3rem;
+    margin: 5rem auto;
+    box-shadow: -0.5rem 0 1rem black;
+  }
+
+  main > section {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 1rem;
+  }
+}
